@@ -1,0 +1,8 @@
+author: Michel Lutz
+author_url: https://twitter.com/michel_lutz
+github_url: https://github.com/micheltlutz/MLTontiatorView
+root_url: https://micheltlutz.github.io/MLTontiatorView/
+module: MLTontiatorView
+output: docs
+theme: fullwidth
+xcodebuild_arguments: [-workspace, 'MLTontiatorView.xcworkspace', -scheme, 'MLTontiatorView-iOS']
