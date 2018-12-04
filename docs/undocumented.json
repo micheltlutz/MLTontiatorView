@@ -1,0 +1,40 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/michel/DeviOS/MLPods/MLTontiatorView/Sources/Core/MLTontiatorView.swift",
+      "line": 46,
+      "symbol": "MLTontiatorView.SpinnerSize.MLSpinnerSizeMini",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/michel/DeviOS/MLPods/MLTontiatorView/Sources/Core/MLTontiatorView.swift",
+      "line": 47,
+      "symbol": "MLTontiatorView.SpinnerSize.MLSpinnerSizeSmall",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/michel/DeviOS/MLPods/MLTontiatorView/Sources/Core/MLTontiatorView.swift",
+      "line": 48,
+      "symbol": "MLTontiatorView.SpinnerSize.MLSpinnerSizeMedium",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/michel/DeviOS/MLPods/MLTontiatorView/Sources/Core/MLTontiatorView.swift",
+      "line": 49,
+      "symbol": "MLTontiatorView.SpinnerSize.MLSpinnerSizeLarge",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/michel/DeviOS/MLPods/MLTontiatorView/Sources/Core/MLTontiatorView.swift",
+      "line": 50,
+      "symbol": "MLTontiatorView.SpinnerSize.MLSpinnerSizeVeryLarge",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/michel/DeviOS/MLPods/MLTontiatorView"
+}

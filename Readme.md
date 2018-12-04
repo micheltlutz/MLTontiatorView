@@ -1,5 +1,10 @@
 # MLTontiatorView
 
+<p align="center">
+ <img width="300" height="300"src="http://micheltlutz.me/imagens/projetos/MLTontiatorView/MLAUDIOPLAYER.png">
+ </p>
+
+
 [![Platforms](https://img.shields.io/cocoapods/p/MLTontiatorView.svg)](https://cocoapods.org/pods/MLTontiatorView)
 [![License](https://img.shields.io/cocoapods/l/MLTontiatorView.svg)](https://raw.githubusercontent.com/micheltlutz/MLTontiatorView/master/LICENSE)
 
@@ -7,8 +12,6 @@
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![CocoaPods compatible](https://img.shields.io/cocoapods/v/MLTontiatorView.svg)](https://cocoapods.org/pods/MLTontiatorView)
 
-[![Travis](https://img.shields.io/travis/micheltlutz/MLTontiatorView/master.svg)](https://travis-ci.org/micheltlutz/MLTontiatorView/branches)
-[![SwiftFrameworkTemplate](https://img.shields.io/badge/SwiftFramework-Template-red.svg)](http://github.com/RahulKatariya/SwiftFrameworkTemplate)
 
 A Simple Activity indicator view
 
@@ -17,9 +20,34 @@ A Simple Activity indicator view
 - [Usage](#usage)
 - [License](#license)
 
+
+## Usage
+
+```swift
+ let viewActivitySmall = MLTontiatorView()
+ viewActivitySmall.spinnerSize = .MLSpinnerSizeSmall
+ viewActivitySmall.spinnerColor = UIColor.purple
+ self.view.addSubview(viewActivitySmall)
+ viewActivitySmall.startAnimating()
+```
+
+## Result
+
+<p align="center">
+ <img width="300" height="238"src="http://micheltlutz.me/imagens/projetos/MLTontiatorView/TOTIATORVIEW.gif">
+ </p>
+
+## Docs
+
+[Documentation](http://htmlpreview.github.io/?https://github.com/micheltlutz/MLTontiatorView/blob/develop/docs/index.html)
+
+MLTontiatorView Docs (100% documented)
+
+
+
 ## Requirements
 
-- iOS 8.0+ / Mac OS X 10.10+ / tvOS 9.0+ / watchOS 2.0+
+- iOS 10.0+ / tvOS 9.0+
 - Xcode 10.0+
 
 ## Installation
@@ -146,7 +174,6 @@ $ git submodule update --init --recursive
 
 </p></details>
 
-## Usage
 
 ## Contributing
 
@@ -154,7 +181,7 @@ Issues and pull requests are welcome!
 
 ## Author
 
-Michel Lutz [@michel_lutz](https://twitter.com/michel_lutz)
+Michel Lutz [@michel_lutz](https://twitter.com/michel_lutz) - [My Site](http://micheltlutz.me)
 
 ## License
 

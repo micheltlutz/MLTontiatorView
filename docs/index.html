@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>MLTontiatorView  Reference</title>
+    <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a title="MLTontiatorView  Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="index.html">MLTontiatorView Docs</a> (80% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="index.html">MLTontiatorView Reference</a>
+        <img id="carat" src="img/carat.png" />
+        MLTontiatorView  Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Classes/MLTontiatorView.html">MLTontiatorView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/MLTontiatorView/SpinnerSize.html">– SpinnerSize</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            
+            <h1 id='mltontiatorview' class='heading'>MLTontiatorView</h1>
+
+<p align="center">
+ <img width="300" height="300"src="http://micheltlutz.me/imagens/projetos/MLTontiatorView/MLAUDIOPLAYER.png">
+ </p>
+
+<p><a href="https://cocoapods.org/pods/MLTontiatorView"><img src="https://img.shields.io/cocoapods/p/MLTontiatorView.svg" alt="Platforms"></a>
+<a href="https://raw.githubusercontent.com/micheltlutz/MLTontiatorView/master/LICENSE"><img src="https://img.shields.io/cocoapods/l/MLTontiatorView.svg" alt="License"></a></p>
+
+<p><a href="https://github.com/apple/swift-package-manager"><img src="https://img.shields.io/badge/Swift%20Package%20Manager-compatible-brightgreen.svg" alt="Swift Package Manager"></a>
+<a href="https://github.com/Carthage/Carthage"><img src="https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat" alt="Carthage compatible"></a>
+<a href="https://cocoapods.org/pods/MLTontiatorView"><img src="https://img.shields.io/cocoapods/v/MLTontiatorView.svg" alt="CocoaPods compatible"></a></p>
+
+<p>A Simple Activity indicator view</p>
+
+<ul>
+<li><a href="#requirements">Requirements</a></li>
+<li><a href="#installation">Installation</a></li>
+<li><a href="#usage">Usage</a></li>
+<li><a href="#license">License</a></li>
+</ul>
+<h2 id='usage' class='heading'>Usage</h2>
+<pre class="highlight swift"><code> <span class="k">let</span> <span class="nv">viewActivitySmall</span> <span class="o">=</span> <span class="kt">MLTontiatorView</span><span class="p">()</span>
+ <span class="n">viewActivitySmall</span><span class="o">.</span><span class="n">spinnerSize</span> <span class="o">=</span> <span class="o">.</span><span class="kt">MLSpinnerSizeSmall</span>
+ <span class="n">viewActivitySmall</span><span class="o">.</span><span class="n">spinnerColor</span> <span class="o">=</span> <span class="kt">UIColor</span><span class="o">.</span><span class="n">purple</span>
+ <span class="k">self</span><span class="o">.</span><span class="n">view</span><span class="o">.</span><span class="nf">addSubview</span><span class="p">(</span><span class="n">viewActivitySmall</span><span class="p">)</span>
+ <span class="n">viewActivitySmall</span><span class="o">.</span><span class="nf">startAnimating</span><span class="p">()</span>
+</code></pre>
+<h2 id='result' class='heading'>Result</h2>
+
+<p align="center">
+ <img width="300" height="238"src="http://micheltlutz.me/imagens/projetos/MLTontiatorView/TOTIATORVIEW.gif">
+ </p>
+<h2 id='docs' class='heading'>Docs</h2>
+
+<p><a href="http://htmlpreview.github.io/?https://github.com/micheltlutz/MLTontiatorView/blob/develop/docs/index.html">Documentation</a></p>
+
+<p>MLTontiatorView Docs (100% documented)</p>
+<h2 id='requirements' class='heading'>Requirements</h2>
+
+<ul>
+<li>iOS 10.0+ / tvOS 9.0+</li>
+<li>Xcode 10.0+</li>
+</ul>
+<h2 id='installation' class='heading'>Installation</h2>
+<h3 id='dependency-managers' class='heading'>Dependency Managers</h3>
+
+<details>
+  <summary><strong>CocoaPods</strong></summary>
+
+[CocoaPods](http://cocoapods.org) is a dependency manager for Cocoa projects. You can install it with the following command:
+
+&ldquo;`bash
+$ gem install cocoapods
+&rdquo;`
+
+To integrate MLTontiatorView into your Xcode project using CocoaPods, specify it in your `Podfile`:
+
+&ldquo;`ruby
+source &lsquo;https://github.com/CocoaPods/Specs.git&rsquo;
+platform :ios, &lsquo;8.0&rsquo;
+use_frameworks!
+
+pod &lsquo;MLTontiatorView&rsquo;, &lsquo;~> 1.0.0&rsquo;
+&rdquo;`
+
+Then, run the following command:
+
+&ldquo;`bash
+$ pod install
+&rdquo;`
+
+</details>
+
+<details>
+  <summary><strong>Carthage</strong></summary>
+
+[Carthage](https://github.com/Carthage/Carthage) is a decentralized dependency manager that automates the process of adding frameworks to your Cocoa application.
+
+You can install Carthage with [Homebrew](http://brew.sh/) using the following command:
+
+&ldquo;`bash
+$ brew update
+$ brew install carthage
+&rdquo;`
+
+To integrate MLTontiatorView into your Xcode project using Carthage, specify it in your `Cartfile`:
+
+&ldquo;`ogdl
+github &quot;micheltlutz/MLTontiatorView&rdquo; ~> 1.0.0
+&ldquo;`
+
+</details>
+
+<details>
+  <summary><strong>Swift Package Manager</strong></summary>
+
+To use MLTontiatorView as a [Swift Package Manager](https://swift.org/package-manager/) package just add the following in your Package.swift file.
+
+&rdquo;` swift
+// swift-tools-version:4.2
+
+import PackageDescription
+
+let package = Package(
+    name: &ldquo;HelloMLTontiatorView&rdquo;,
+    dependencies: [
+        .package(url: &ldquo;https://github.com/micheltlutz/MLTontiatorView.git&rdquo;, .upToNextMajor(from: &ldquo;1.0.0&rdquo;))
+    ],
+    targets: [
+        .target(name: &ldquo;HelloMLTontiatorView&rdquo;, dependencies: [&ldquo;MLTontiatorView&rdquo;])
+    ]
+)
+&ldquo;`
+</details>
+<h3 id='manually' class='heading'>Manually</h3>
+
+<p>If you prefer not to use either of the aforementioned dependency managers, you can integrate MLTontiatorView into your project manually.</p>
+
+<details>
+  <summary><strong>Git Submodules</strong></summary><p>
+
+- Open up Terminal, `cd` into your top-level project directory, and run the following command &quot;if&rdquo; your project is not initialized as a git repository:
+
+&ldquo;`bash
+$ git init
+&rdquo;`
+
+- Add MLTontiatorView as a git [submodule](http://git-scm.com/docs/git-submodule) by running the following command:
+
+&ldquo;`bash
+$ git submodule add https://github.com/micheltlutz/MLTontiatorView.git
+$ git submodule update &ndash;init &ndash;recursive
+&rdquo;`
+
+- Open the new `MLTontiatorView` folder, and drag the `MLTontiatorView.xcodeproj` into the Project Navigator of your application&rsquo;s Xcode project.
+
+    > It should appear nested underneath your application&rsquo;s blue project icon. Whether it is above or below all the other Xcode groups does not matter.
+
+- Select the `MLTontiatorView.xcodeproj` in the Project Navigator and verify the deployment target matches that of your application target.
+- Next, select your application project in the Project Navigator (blue project icon) to navigate to the target configuration window and select the application target under the &ldquo;Targets&rdquo; heading in the sidebar.
+- In the tab bar at the top of that window, open the &ldquo;General&rdquo; panel.
+- Click on the `+` button under the &ldquo;Embedded Binaries&rdquo; section.
+- You will see two different `MLTontiatorView.xcodeproj` folders each with two different versions of the `MLTontiatorView.framework` nested inside a `Products` folder.
+
+    > It does not matter which `Products` folder you choose from.
+
+- Select the `MLTontiatorView.framework`.
+
+- And that&rsquo;s it!
+
+> The `MLTontiatorView.framework` is automagically added as a target dependency, linked framework and embedded framework in a copy files build phase which is all you need to build on the simulator and a device.
+
+</p></details>
+
+<details>
+  <summary><strong>Embedded Binaries</strong></summary><p>
+
+- Download the latest release from https://github.com/micheltlutz/MLTontiatorView/releases
+- Next, select your application project in the Project Navigator (blue project icon) to navigate to the target configuration window and select the application target under the &ldquo;Targets&rdquo; heading in the sidebar.
+- In the tab bar at the top of that window, open the &ldquo;General&rdquo; panel.
+- Click on the `+` button under the &ldquo;Embedded Binaries&rdquo; section.
+- Add the downloaded `MLTontiatorView.framework`.
+- And that&rsquo;s it!
+
+</p></details>
+<h2 id='contributing' class='heading'>Contributing</h2>
+
+<p>Issues and pull requests are welcome!</p>
+<h2 id='author' class='heading'>Author</h2>
+
+<p>Michel Lutz <a href="https://twitter.com/michel_lutz">@michel_lutz</a> - <a href="http://micheltlutz.me">My Site</a></p>
+<h2 id='license' class='heading'>License</h2>
+
+<p>MLTontiatorView is released under the MIT license. See <a href="https://github.com/micheltlutz/MLTontiatorView/blob/master/LICENSE">LICENSE</a> for details.</p>
+
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2018 <a class="link" href="http://micheltlutz.me" target="_blank" rel="external">Michel Lutz</a>. All rights reserved. (Last updated: 2018-12-04)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

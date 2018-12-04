@@ -20,7 +20,7 @@ let package = Package(
     targets: [
         .target(
             name: "MLTontiatorView",
-            dependencies: [],
+            dependencies: ["UIKit"],
             path: "Sources"),
         .testTarget(
             name: "MLTontiatorViewTests",
