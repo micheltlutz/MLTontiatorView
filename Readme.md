@@ -23,6 +23,8 @@ A Simple Activity indicator view
 
 ## Usage
 
+### With color
+
 ```swift
  let viewActivitySmall = MLTontiatorView()
  viewActivitySmall.spinnerSize = .MLSpinnerSizeSmall
@@ -31,18 +33,30 @@ A Simple Activity indicator view
  viewActivitySmall.startAnimating()
 ```
 
+### With image
+
+```swift
+ let viewActivitySmall = MLTontiatorView()
+ viewActivitySmall.spinnerSize = .MLSpinnerSizeSmall
+ viewActivitySmall.spinnerImage = UIImage(named: "mySpinnerImage")
+ self.view.addSubview(viewActivitySmall)
+ viewActivitySmall.startAnimating()
+```
+
 ## Result
 
 <p align="center">
  <img width="300" height="238"src="http://micheltlutz.me/imagens/projetos/MLTontiatorView/TOTIATORVIEW.gif">
+ 
+  <img width="300" height="238"src="http://micheltlutz.me/imagens/projetos/MLTontiatorView/imageSpinner.gif">
  </p>
+
 
 ## Docs
 
 [Documentation](http://htmlpreview.github.io/?https://github.com/micheltlutz/MLTontiatorView/blob/develop/docs/index.html)
 
-MLTontiatorView Docs (100% documented)
-
+MLTontiatorView Docs (82% documented)
 
 
 ## Requirements
@@ -66,10 +80,10 @@ To integrate MLTontiatorView into your Xcode project using CocoaPods, specify it
 
 ```ruby
 source 'https://github.com/CocoaPods/Specs.git'
-platform :ios, '8.0'
+platform :ios, '10.0'
 use_frameworks!
 
-pod 'MLTontiatorView', '~> 1.0.0'
+pod 'MLTontiatorView', '~> 1.1.0'
 ```
 
 Then, run the following command:
@@ -95,7 +109,7 @@ $ brew install carthage
 To integrate MLTontiatorView into your Xcode project using Carthage, specify it in your `Cartfile`:
 
 ```ogdl
-github "micheltlutz/MLTontiatorView" ~> 1.0.0
+github "micheltlutz/MLTontiatorView" ~> 1.1.0
 ```
 
 </details>
@@ -113,7 +127,7 @@ import PackageDescription
 let package = Package(
     name: "HelloMLTontiatorView",
     dependencies: [
-        .package(url: "https://github.com/micheltlutz/MLTontiatorView.git", .upToNextMajor(from: "1.0.0"))
+        .package(url: "https://github.com/micheltlutz/MLTontiatorView.git", .upToNextMajor(from: "1.1.0"))
     ],
     targets: [
         .target(name: "HelloMLTontiatorView", dependencies: ["MLTontiatorView"])

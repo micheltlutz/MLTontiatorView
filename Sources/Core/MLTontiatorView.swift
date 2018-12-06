@@ -32,12 +32,24 @@ import UIKit
  viewActivitySmall.spinnerColor = UIColor.purple
  self.view.addSubview(viewActivitySmall)
  viewActivitySmall.startAnimating()
+
+ //or With image
+
+ let viewActivitySmall = MLTontiatorView()
+ viewActivitySmall.spinnerSize = .MLSpinnerSizeSmall
+ viewActivitySmall.spinnerImage = UIImage(named: "mySpinnerImage")
+ self.view.addSubview(viewActivitySmall)
+ viewActivitySmall.startAnimating()
  ````
  */
 open class MLTontiatorView: UIView {
-    /// Lib name
+    /**
+     Lib name
+     */
     public static let name = "MLTontiatorView"
-    /// PI contant
+    /**
+     PI contant
+     */
     private let pi = 3.14159265359
     /**
      Enum with Spinners Size declarations
@@ -50,36 +62,37 @@ open class MLTontiatorView: UIView {
         case MLSpinnerSizeVeryLarge // suitable for frame size (220,220)
     }
     /**
-     * radius of the spinner/rotator will be different in each Spinner Size
-     * default = kAVSpinnerSizeTiny
-     * if its kSHSpinnerSizeVeryLarge or kSHSpinnerSizeLarge, kSHSpinnerSizeMedium, can able to set two title, one title in.center of spinner and another in below the spinner
+     radius of the spinner/rotator will be different in each Spinner Size
+     default = kAVSpinnerSizeTiny
+     if its MLSpinnerSizeVeryLarge or MLSpinnerSizeLarge, MLSpinnerSizeMedium, can able to set two title, one title in.center of spinner and another in below the spinner
      */
     open var spinnerSize: SpinnerSize?
     /**
-     * spinner color
-     * default = UIColor.white()
+     spinner color
+     default = UIColor.white()
      */
     open var spinnerColor: UIColor? = .gray
-
     /**
-     * spinner color
-     * default = UIColor.white()
+     Define an image for Tontiator and ignore color
+     */
+    open var spinnerImage: UIImage?
+    /**
+     spinner color
+     default = UIColor.white()
      */
     open var spinnerGradientColors: [CGColor]?
-
     /**
-     * spinner angle indicates if spinner is open or not
-     * default = 360
+     spinner angle indicates if spinner is open or not
+     default = 360
      */
     open var angleSpinner: Double = 360
-
     /**
-     * stop animation when showing and dismissing the spinner
+     Stop animation when showing and dismissing the spinner
      */
     private var stopShowingAndDismissingAnimation: Bool?
     /**
-     * disable the user interaction of entire application
-     * default = false
+     disable the user interaction of entire application
+     default = false
      */
     private var disableEntireUserInteraction: Bool? {
         didSet {
@@ -88,14 +101,26 @@ open class MLTontiatorView: UIView {
             }
         }
     }
-    ///Container for spinner
+    /**
+     Container for spinner
+     */
     private var viewActivitySquare: UIView?
-    ///Indicates if animations is running
+    /**
+     Indicates if animations is running
+    */
     private var isAnimating: Bool?
-    ///Indicates a lineWidth start with 4.0
+    /**
+     Indicates a lineWidth start with 4.0
+     */
     private var lineWidth: CGFloat = 4.0
-    ///Indicates a defaultFrame start with .zero
+    /**
+     Indicates a defaultFrame start with .zero
+     */
     private var defaultFrame: CGRect = .zero
+    /**
+     Image view for image spinner
+     */
+    private var imageView: UIImageView?
     /**
      This func Convert degrees in radians
      */
@@ -200,11 +225,27 @@ open class MLTontiatorView: UIView {
                                                name: UIApplication.willEnterForegroundNotification, object: nil)
 
         viewActivitySquare?.center = CGPoint(x: self.frame.size.width / 2, y: self.frame.size.height / 2)
+        if let spinnerImage = spinnerImage {
+            createSpinnerWith(spinnerImage: spinnerImage)
+        }
         self.addSubview(viewActivitySquare!)
         self.rotationAnimation()
         UIView.animate(withDuration: (stopShowingAndDismissingAnimation == true) ? 0.0 : 0.5) { () -> Void in
             self.alpha = 1.0
         }
+    }
+    /**
+     This function crate a UIImageView, draw image on center and addSubview in viewActivitySquare
+
+     - Parameter spinnerImage: UIImage
+     */
+    private func createSpinnerWith(spinnerImage: UIImage) {
+        guard let viewActivity = viewActivitySquare else { return }
+        imageView = UIImageView(image: spinnerImage)
+        imageView?.frame = defaultFrame
+        viewActivity.addSubview(imageView!)
+        imageView?.center = CGPoint(x: viewActivity.frame.size.width / 2,
+                                    y: viewActivity.frame.size.height / 2)
     }
     /**
      This func stop animation and remove observer
