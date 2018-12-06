@@ -14,7 +14,7 @@
     <a title="MLTontiatorView Class Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html">MLTontiatorView Docs</a> (80% documented)</p>
+        <p><a href="../index.html">MLTontiatorView Docs</a> (82% documented)</p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -55,6 +55,14 @@
 <pre class="highlight swift"><code><span class="k">let</span> <span class="nv">viewActivitySmall</span> <span class="o">=</span> <span class="kt">MLTontiatorView</span><span class="p">()</span>
 <span class="n">viewActivitySmall</span><span class="o">.</span><span class="n">spinnerSize</span> <span class="o">=</span> <span class="o">.</span><span class="kt">MLSpinnerSizeSmall</span>
 <span class="n">viewActivitySmall</span><span class="o">.</span><span class="n">spinnerColor</span> <span class="o">=</span> <span class="kt">UIColor</span><span class="o">.</span><span class="n">purple</span>
+<span class="k">self</span><span class="o">.</span><span class="n">view</span><span class="o">.</span><span class="nf">addSubview</span><span class="p">(</span><span class="n">viewActivitySmall</span><span class="p">)</span>
+<span class="n">viewActivitySmall</span><span class="o">.</span><span class="nf">startAnimating</span><span class="p">()</span>
+
+<span class="c1">//or With image</span>
+
+<span class="k">let</span> <span class="nv">viewActivitySmall</span> <span class="o">=</span> <span class="kt">MLTontiatorView</span><span class="p">()</span>
+<span class="n">viewActivitySmall</span><span class="o">.</span><span class="n">spinnerSize</span> <span class="o">=</span> <span class="o">.</span><span class="kt">MLSpinnerSizeSmall</span>
+<span class="n">viewActivitySmall</span><span class="o">.</span><span class="n">spinnerImage</span> <span class="o">=</span> <span class="kt">UIImage</span><span class="p">(</span><span class="nv">named</span><span class="p">:</span> <span class="s">"mySpinnerImage"</span><span class="p">)</span>
 <span class="k">self</span><span class="o">.</span><span class="n">view</span><span class="o">.</span><span class="nf">addSubview</span><span class="p">(</span><span class="n">viewActivitySmall</span><span class="p">)</span>
 <span class="n">viewActivitySmall</span><span class="o">.</span><span class="nf">startAnimating</span><span class="p">()</span>
 </code></pre>
@@ -160,7 +168,7 @@
                       <div class="abstract">
                         <p>radius of the spinner/rotator will be different in each Spinner Size
 default = kAVSpinnerSizeTiny
-if its kSHSpinnerSizeVeryLarge or kSHSpinnerSizeLarge, kSHSpinnerSizeMedium, can able to set two title, one title in.center of spinner and another in below the spinner</p>
+if its MLSpinnerSizeVeryLarge or MLSpinnerSizeLarge, MLSpinnerSizeMedium, can able to set two title, one title in.center of spinner and another in below the spinner</p>
 
                       </div>
                       <div class="declaration">
@@ -196,6 +204,33 @@ default = UIColor.white()</p>
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">spinnerColor</span><span class="p">:</span> <span class="kt">UIColor</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MLTontiatorView@objc(cs)MLTontiatorView(py)spinnerImage"></a>
+                    <a name="//apple_ref/swift/Property/spinnerImage" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MLTontiatorView@objc(cs)MLTontiatorView(py)spinnerImage">spinnerImage</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Define an image for Tontiator and ignore color</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">spinnerImage</span><span class="p">:</span> <span class="kt">UIImage</span><span class="p">?</span></code></pre>
 
                         </div>
                       </div>
@@ -271,7 +306,7 @@ default = 360</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>stop animation when showing and dismissing the spinner</p>
+                        <p>Stop animation when showing and dismissing the spinner</p>
 
                       </div>
                       <div class="declaration">
@@ -415,6 +450,33 @@ default = false</p>
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">private</span> <span class="k">var</span> <span class="nv">defaultFrame</span><span class="p">:</span> <span class="kt">CGRect</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:15MLTontiatorViewAAC05imageB033_01CAC266B58014267D346802FB9A1EB9LLSo07UIImageB0CSgvp"></a>
+                    <a name="//apple_ref/swift/Property/imageView" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15MLTontiatorViewAAC05imageB033_01CAC266B58014267D346802FB9A1EB9LLSo07UIImageB0CSgvp">imageView</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Image view for image spinner</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">private</span> <span class="k">var</span> <span class="nv">imageView</span><span class="p">:</span> <span class="kt">UIImageView</span><span class="p">?</span></code></pre>
 
                         </div>
                       </div>
@@ -633,6 +695,52 @@ default = false</p>
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:15MLTontiatorViewAAC17createSpinnerWith33_01CAC266B58014267D346802FB9A1EB9LL12spinnerImageySo7UIImageC_tF"></a>
+                    <a name="//apple_ref/swift/Method/createSpinnerWith(spinnerImage:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15MLTontiatorViewAAC17createSpinnerWith33_01CAC266B58014267D346802FB9A1EB9LL12spinnerImageySo7UIImageC_tF">createSpinnerWith(spinnerImage:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This function crate a UIImageView, draw image on center and addSubview in viewActivitySquare</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">private</span> <span class="kd">func</span> <span class="nf">createSpinnerWith</span><span class="p">(</span><span class="nv">spinnerImage</span><span class="p">:</span> <span class="kt">UIImage</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>spinnerImage</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>UIImage</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/c:@M@MLTontiatorView@objc(cs)MLTontiatorView(im)stopAnimating"></a>
                     <a name="//apple_ref/swift/Method/stopAnimating()" class="dashAnchor"></a>
                     <a class="token" href="#/c:@M@MLTontiatorView@objc(cs)MLTontiatorView(im)stopAnimating">stopAnimating()</a>
@@ -662,7 +770,7 @@ default = false</p>
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2018 <a class="link" href="http://micheltlutz.me" target="_blank" rel="external">Michel Lutz</a>. All rights reserved. (Last updated: 2018-12-04)</p>
+          <p>&copy; 2018 <a class="link" href="http://micheltlutz.me" target="_blank" rel="external">Michel Lutz</a>. All rights reserved. (Last updated: 2018-12-06)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
