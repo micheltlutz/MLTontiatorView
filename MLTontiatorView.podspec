@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
  s.name = 'MLTontiatorView'
- s.version = '1.1.0'
+ s.version = '1.1.1'
  s.license = { :type => "MIT", :file => "LICENSE" }
  s.summary = 'A Simple Activity indicator view'
  s.homepage = 'http://micheltlutz.me'
