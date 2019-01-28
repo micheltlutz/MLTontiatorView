@@ -570,6 +570,7 @@
 				PRODUCT_NAME = MLTontiatorView;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
@@ -590,6 +591,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = me.micheltlutz.MLTontiatorView.MLTontiatorView;
 				PRODUCT_NAME = MLTontiatorView;
 				SKIP_INSTALL = YES;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
