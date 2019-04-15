@@ -1,4 +1,4 @@
-## [1.1.1 - Swift 5.0](https://github.com/micheltlutz/MLTontiatorView/releases/tag/v1.1.1) (2019-04-14)
+## [1.1.2 - Swift 5.0](https://github.com/micheltlutz/MLTontiatorView/releases/tag/v1.1.1) (2019-04-14)
 
 #### Add
 
