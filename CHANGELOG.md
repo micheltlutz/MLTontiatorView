@@ -1,3 +1,11 @@
+## [1.1.1 - Swift 5.0](https://github.com/micheltlutz/MLTontiatorView/releases/tag/v1.1.1) (2019-04-14)
+
+#### Add
+
+* Support to Swift 5
+
+-----
+
 ## [1.1.0 - Swift 4.2](https://github.com/micheltlutz/MLTontiatorView/releases/tag/v1.1.0) (2018-12-06)
 
 #### Add
